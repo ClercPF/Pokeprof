@@ -12,7 +12,7 @@ function initPlayer()
     $pkp = array();
     $pkp['name'] = 'Prof d\'info';
     $pkp['lvl'] = 38;
-    $pkp['img'] = './pokeprof_01.jpg';
+    $pkp['img'] = './img/pokeprof_01.jpg';
     $pkp['hpmax'] = 150;
     $pkp['hp'] = 150;
     $pkp['moves'][0]['name'] = 'Disquette';
@@ -39,7 +39,7 @@ function initPlayer()
     $pkp = array();
     $pkp['name'] = 'Prof de baballe';
     $pkp['lvl'] = 27;
-    $pkp['img'] = './pokeprof_02.png';
+    $pkp['img'] = './img/pokeprof_02.png';
     $pkp['hpmax'] = 120;
     $pkp['hp'] = 120;
     $pkp['moves'][0]['name'] = 'Balle Jaune';
@@ -67,7 +67,7 @@ function initPlayer()
     $pkp = array();
     $pkp['name'] = 'Prof de frooonçais';
     $pkp['lvl'] = 45;
-    $pkp['img'] = './pokeprof_03.png';
+    $pkp['img'] = './img/pokeprof_03.png';
     $pkp['hpmax'] = 200;
     $pkp['hp'] = 200;
     $pkp['moves'][0]['name'] = 'Vocabulaire';
@@ -95,7 +95,7 @@ function initPlayer()
     $pkp = array();
     $pkp['name'] = 'A.E.D.';
     $pkp['lvl'] = 21;
-    $pkp['img'] = './pokeprof_04.png';
+    $pkp['img'] = './img/pokeprof_04.png';
     $pkp['hpmax'] = 135;
     $pkp['hp'] = 135;
     $pkp['moves'][0]['name'] = 'Hop hop hop';
@@ -141,7 +141,7 @@ function initEnemy()
     $pkp = array();
     $pkp['name'] = 'Etudiant';
     $pkp['lvl'] = 18;
-    $pkp['img'] = './enemy_01.jpg';
+    $pkp['img'] = './img/enemy_01.jpg';
     $pkp['hpmax'] = 150;
     $pkp['hp'] = 150;
     $pkp['moves'][0]['name'] = 'Retard';
@@ -169,7 +169,7 @@ function initEnemy()
     $pkp = array();
     $pkp['name'] = 'Lycéenne';
     $pkp['lvl'] = 16;
-    $pkp['img'] = './enemy_02.png';
+    $pkp['img'] = '/img/enemy_02.png';
     $pkp['hpmax'] = 130;
     $pkp['hp'] = 130;
     $pkp['moves'][0]['name'] = 'Oublie de Livre';
@@ -197,7 +197,7 @@ function initEnemy()
     $pkp = array();
     $pkp['name'] = 'Etudiante';
     $pkp['lvl'] = 19;
-    $pkp['img'] = './enemy_03.png';
+    $pkp['img'] = './img/enemy_03.png';
     $pkp['hpmax'] = 165;
     $pkp['hp'] = 165;
     $pkp['moves'][0]['name'] = 'Bavardage';
@@ -225,7 +225,7 @@ function initEnemy()
     $pkp = array();
     $pkp['name'] = 'Lycéen';
     $pkp['lvl'] = 15;
-    $pkp['img'] = './enemy_04.png';
+    $pkp['img'] = './img/enemy_04.png';
     $pkp['hpmax'] = 130;
     $pkp['hp'] = 130;
     $pkp['moves'][0]['name'] = 'Oh! une mouche';
