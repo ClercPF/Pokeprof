@@ -169,7 +169,7 @@ function initEnemy()
     $pkp = array();
     $pkp['name'] = 'Lycéenne';
     $pkp['lvl'] = 16;
-    $pkp['img'] = '/img/enemy_02.png';
+    $pkp['img'] = './img/enemy_02.png';
     $pkp['hpmax'] = 130;
     $pkp['hp'] = 130;
     $pkp['moves'][0]['name'] = 'Oublie de Livre';
