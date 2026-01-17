@@ -1,0 +1,160 @@
+/*
+    CLERC Pierre-François
+    Création 16/01/2026
+    style.css
+    CSS pour les mini projet RPG du BTS SIO
+*/
+
+:root {
+    --back1: #cfdab8;
+    --back2: #bdc991;
+    --border: #134613;
+    --shadow: #376e37;;
+}
+
+/* Style général */
+body {
+    background-color: var(--back1);
+    font-family: "Courier New", monospace;
+    color: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Écran Game Boy */
+.gameboy-screen {
+    width: 360px;
+    background-color: var(--back2);
+    border: 6px solid var(--border);
+    padding: 15px;
+    box-shadow: inset -4px -4px 0 var(--shadow);
+}
+
+/* Formulaire */
+
+.form-box {
+    background-color: var(--back1);
+    border: 4px solid var(--border);
+    padding: 10px;
+    margin-bottom: 12px;
+    height: 310px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "z1 z2"
+        "z3 z4"
+        "z5 z5";
+    gap: 8px;
+}
+
+.form-box label {
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.form-box input {
+    width:45%;
+    padding: 6px;
+    background-color: var(--back2);
+    border: 3px solid var(--border);
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.zone1 { 
+    grid-area: z1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* colle le contenu en haut*/
+    align-items: center;       /* centré horizontalement */
+}
+.zone2 { grid-area: z2; }
+.zone3 { grid-area: z3; }
+.zone4 {
+    grid-area: z4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* colle le contenu en bas */
+    align-items: center;       /* centré horizontalement */
+}
+.zone5 {
+    grid-area: z5;
+    border: 2px dashed var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.zone {
+    text-align: center;
+}
+
+.zone p {
+    font-size: 12px;
+    margin: 0;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60%;
+  height: 6px;
+  margin: 2px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--back2);
+  border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--border);
+  border-radius: 3px;
+}
+
+.form-box img {
+    max-width: 70%;
+    height: auto;
+    width: auto;
+}
+
+/* Menu combat Pokémon */
+.battle-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    background-color: var(--back2);
+    border: 4px solid var(--border);
+    padding: 8px;
+}
+
+/* Boutons style Pokémon */
+.battle-menu button {
+    background-color: var(--back2);
+    border: 4px solid var(--border);
+    color: var(--border);
+    padding: 10px;
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: inset -2px -2px 0 var(--shadow);
+}
+
+.battle-menu button:hover {
+    background-color:  var(--back2);
+}
+
+.battle-menu button:active {
+    box-shadow: inset 2px 2px 0 var(--shadow);
+}
+
+.battle-menu button:disabled {
+    background-color: var(--shadow);
+}
